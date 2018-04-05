@@ -1,0 +1,15 @@
+@import 'normalize';
+@import 'variables';
+@import 'base';
+@import 'grid';
+@import 'fonts/fonts';
+@import 'theme';
+@import 'components';
+@import 'states';
+
+// sections
+@import 'header';
+@import 'greeting-section';
+@import 'about-section';
+@import 'slogan-section';
+@import 'features-section';

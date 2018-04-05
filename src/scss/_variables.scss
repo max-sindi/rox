@@ -1,0 +1,42 @@
+// colors
+$bg-red: #e53621;
+$dark-gold: #cbcb75;
+$header-text-red: #e43521;
+$header-text-black: #222;
+$black-text: #222;
+
+//fonts
+$header-text-size: 20px;
+$museo: "Museo Sans Cyrl", sans-serif;
+
+//grid
+$wrapper-gutter: 10px;
+$lg-point: 960px - 1px;
+$sm-point: 640px - 1px;
+
+// buttons
+$oder-button-red-bg-color: #f95428;
+
+  //gradients
+$order-button-red-gradient: 
+  linear-gradient(to top, #e23724 0%, #e63520 100%);
+
+$order-button-red-gradient--hover: 
+  linear-gradient(to top, rgba(226, 55, 36, 0.32) 0%, 
+                        rgba(230, 53, 32, 0.32) 100%);
+
+$order-button-red-gradient--active: 
+  linear-gradient(to top, #f2361f 0%, #e23724 100%);
+
+  // box-shadows
+$oder-button-red-box-shadow: 
+  0 4px 0 rgba(188, 51, 38, 0.75), 
+  inset 0 2px 0 rgba(222, 109, 93, 0.75);
+
+$oder-button-red-box-shadow--hover: 
+  0 4px 0 rgba(218, 58, 44, 0.75), 
+  inset 0 2px 0 rgba(222, 109, 93, 0.75);
+
+$oder-button-red-box-shadow--active: 
+  0 4px 0 rgba(188, 51, 38, 0.75), 
+  inset 0 2px 0 rgba(222, 109, 93, 0.75);

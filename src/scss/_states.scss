@@ -1,0 +1,8 @@
+.order-button--red:hover {
+  background-image: $order-button-red-gradient--hover;
+  box-shadow: $oder-button-red-box-shadow--hover;
+}
+.order-button--red:active {
+  background-image: $order-button-red-gradient--active;
+  box-shadow: $oder-button-red-box-shadow--active;
+}
