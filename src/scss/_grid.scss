@@ -1,20 +1,22 @@
 .section {
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .wrapper {
+  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 $wrapper-gutter;
-  width: 960px;
 
-  @media (max-width: $lg-point) {
-    width: 640px;
+  @media (min-width: $sm-point) {
+    max-width: $sm-width;
   }
 
-  @media (max-width: $sm-point) {
-    width: 320px;
+  @media (min-width: $md-point) {
+    max-width: $md-width;
+  }
+
+  @media (min-width: $lg-point) {
+    max-width: $lg-width;
   }
 }

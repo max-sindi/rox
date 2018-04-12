@@ -2,14 +2,11 @@
 @import 'variables';
 @import 'base';
 @import 'grid';
-@import 'fonts/fonts';
+@import 'fonts';
 @import 'theme';
+@import 'icons';
 @import 'components';
 @import 'states';
 
 // sections
-@import 'header';
-@import 'greeting-section';
-@import 'about-section';
-@import 'slogan-section';
-@import 'features-section';
+@import 'sections/sections';

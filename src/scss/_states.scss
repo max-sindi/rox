@@ -1,8 +1,44 @@
-.order-button--red:hover {
-  background-image: $order-button-red-gradient--hover;
-  box-shadow: $oder-button-red-box-shadow--hover;
+.header__nav {
+  &-link {
+    &:hover {
+      color: $green-gray;
+      text-decoration: underline;
+    }
+  }
 }
-.order-button--red:active {
-  background-image: $order-button-red-gradient--active;
-  box-shadow: $oder-button-red-box-shadow--active;
+
+.header__nav-drop-list {
+  display: none;
+}
+
+.header__nav-item.has-dropdown:hover {
+  .header__nav-drop-list {
+    display: block;
+  }
+
+  .header__nav-link {
+    color: $green-gray;
+  }
+}
+
+.services__item {
+  &-main {
+    display: none;
+  }
+
+  &.opened {
+    .services__item {
+      &-heading {
+        background-color: #e6e6e6;
+      }
+
+      &-title {
+        color: #000;
+      }
+
+      &-main {
+        display: block;
+      }
+    }
+  }
 }

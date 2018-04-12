@@ -7,9 +7,14 @@ const plumber = require('gulp-plumber');
 const cssmin = require('gulp-cssnano');
 const prefix = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
+const pug = require('gulp-pug');
 
-gulp.task('html', () => {
-  return gulp.src('src/*.html')
+gulp.task('pug', () => {
+  return gulp.src('src/pug/**/*.pug')
+    .pipe( plumber() )
+    .pipe( pug( { 
+                  pretty: true,
+                }))
     .pipe(gulp.dest('dist'));
 })
 
@@ -24,19 +29,25 @@ gulp.task('sass', () => {
 })
 
 gulp.task('img', () => {
-    return gulp.src('src/img/*.{png, jpg, svg}')
-    .pipe(gulp.dest('dist/img'));
+    return gulp.src('src/img/**/*.{png, jpg, svg}')
+    .pipe(gulp.dest('dist/img/'));
 })
 
-gulp.task('serve', ['sass', 'img', 'html'], function() {
+gulp.task('js', () => {
+    return gulp.src('src/js/**/*.js')
+    .pipe(gulp.dest('dist/js/'));
+})
+
+gulp.task('serve', ['sass', 'img', 'pug', 'js'], function() {
 
     browserSync.init({
         server: "./dist"
     });
 
-    gulp.watch("src/scss/*.scss", ['sass']);
-    gulp.watch('src/*.html',      ['html']);
-    gulp.watch('src/img/*.*',     ['img']);
+    gulp.watch("src/scss/**/*.scss", ['sass']);
+    gulp.watch('src/pug/**/*.pug',    ['pug']);
+    gulp.watch('src/img/**/*.*',     ['img']);
+    gulp.watch('src/js/**/*.js',     ['js']);
     gulp.watch("dist/*.*").on('change', browserSync.reload);
 });
 

@@ -1,257 +1,321 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/index.css">
-  <title>ROX</title>
-</head>
-<body>
-
-
-
-  <div class="section header">
-    <div class="wrapper header__wrapper">
-      <div class="header__text-block">
-        <span class="header__text header__text-red">
-          Только сегодня скидка -73%!
-        </span>
-        <span class="header__text header__text-black">
-          До окончания акции осталось:
-        </span>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/index.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="header__logo-wrap"><a class="header__logo-link" href="#"><img class="header__logo-img" src="img/logo.png" alt="Pro-Site logo"/></a></div>
+        <div class="header__sandbox-wrap"><a class="header__sandbox-link" href="mailto:#"></a></div>
+        <div class="header__nav-wrap">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item has-dropdown"><a class="header__nav-link header__nav-link--drop" href="#">Создание сайта</a>
+                <div class="header__nav-drop-wrap">
+                  <ul class="header__nav-drop-list">
+                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">SEO продвижение</a></li>
+                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Контекстная реклама</a></li>
+                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Баннерная реклама</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav-item has-dropdown"><a class="header__nav-link header__nav-link--drop" href="#">Продвижение сайта</a>
+                <div class="header__nav-drop-wrap">
+                  <ul class="header__nav-drop-list">
+                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">SEO продвижение</a></li>
+                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Контекстная реклама</a></li>
+                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Баннерная реклама</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Портфолио</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">Отзывы</a></li>
+              <li class="header__nav-item"><a class="header__nav-link" href="#">О компании</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__order-wrap"><a class="header__order-link" href="#">Заказать</a></div>
       </div>
-      <div class="header__timer-block">
-        <div class="header__timer-wrap">
-
-          <div class="header__timer-rect">
-            <span class="header__timer-number">06</span>
-            <span class="header__timer-unit">часов</span>
-          </div>
-
-          <span class="header__timer-colon">:</span>
-
-          <div class="header__timer-rect">
-            <span class="header__timer-number">45</span>
-            <span class="header__timer-unit">минут</span>
-          </div>
-
-          <span class="header__timer-colon">:</span>
-
-          <div class="header__timer-rect">
-            <span class="header__timer-number">59</span>
-            <span class="header__timer-unit">секунд</span>
+    </header>
+    <section class="section cover">
+      <div class="wrapper cover__wrapper">
+        <div class="cover__heading">
+          <h1 class="cover__heading-title has-dash--light">Создание сайта Форум</h1>
+          <p class="cover__heading-description">К разработке интернет форума у веб-студии PRO-SITE особый подход. Доверив нам разработку под ключ, Вы получите сайт форума с уникальным веб-дизайном, удобной административной панелью и базовой SEO-оптимизацией.</p>
+        </div>
+        <div class="cover__portfolio-wrap">
+          <div class="portfolio">
+            <div class="portfolio__title-wrap"><span class="portfolio__title">Портфолио:</span></div>
+            <div class="portfolio__main">
+              <div class="portfolio__items-wrap">
+                <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-1.png"/></div>
+                <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-2.png"/></div>
+                <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-3.png"/></div>
+              </div><span class="portfolio__control portfolio__control--left"><span class="portfolio__control-icon"></span></span><span class="portfolio__control portfolio__control--right"><span class="portfolio__control-icon"></span></span>
+            </div>
           </div>
         </div>
-
-        <div class="header__timer-text">
-          <span class="header__text header__text-red">
-            Часов по акции
-          </span>
-          <span class="header__text header__text-black">
-            Осталось: 78 шт.
-          </span>
-        </div>
+        <div class="order__wrap"><a class="order__link" href="#">Заказать форум</a></div>
       </div>
-    </div>
-  </div>
-
-
-
-  <div class="section greet">
-    <div class="wrapper greet__wrapper">
-      
-      <div class="greet__photos-wrap">
-        
-        <div class="greet__picture-wrap">
-          <picture class="greet__picture">
-            <source media="(max-width: 639px)" srcset="img/watches-sm.png">
-            <source media="(max-width: 959px)" srcset="img/watches-md.png">
-            <source media="(min-width: 960px)" srcset="img/watches-lg.png">
-            <img src="img/watches-lg.png" alt=" 'ROX' Watches photo">
-          </picture>
+    </section>
+    <div class="section forum">
+      <div class="wrapper">
+        <div class="forum__heading">
+          <h2 class="title title--dark">Что такое форум?</h2>
         </div>
-      </div>
-
-      <div class="greet__descr-wrap">
-        <div class="greet__descr-top">
-          <div class="greet__logo-wrap">
-            <img class="greet__logo" src="img/logo.png" alt="RDXI logo">
+        <div class="forum__main">
+          <div class="forum__text-wrap">
+            <p class="forum__text">Форум представляет собой интернет – площадку, созданную специально для общения ее посетителей, обмена мнениями, обсуждения тем, продуктов потребительского спроса, а также для складчин, чтобы совместно покупать какие-либо инфо-продукты.</p>
+            <p class="forum__text">Форум может быть как самостоятельным сайтом, так и частью основного сайта.</p>
+            <p class="forum__text">Форум может быстро продвигаться в выдаче поисковых систем, благодаря общению посетителей, так как они создают уникальный контент в процессе общения. В основном это – низкочастотные запросы индивидуального и редкого назначения. Такой трафик считается очень качественным.</p>
+            <p class="forum__text">Как правило, информация на форуме обновляется ежедневно за счёт новых сообщений, этот фактор для поисковых систем является очень положительным и способствует быстрому продвижению.</p>
           </div>
-
-          <div class="greet__info-wrap">
-            <div class="greet__info-title">
-              армейские часы «rox»
-            </div>
-            <div class="greet__info-descr">
-              стильный аксессуар для настоящих мужчин
-            </div>
-          </div>
-        </div>
-
-        <div class="greet__descr-bottom">
-          <div class="greet__price-wrap">
-            <div class="greet__price-item">
-              <div class="greet__price-title">
-                Старая цена
-              </div>
-              <div class="greet__price-value greet__price-value--old">
-                12460 р.
-              </div>
-            </div>
-            <div class="greet__price-item">
-              <div class="greet__price-title">
-                Новая цена
-              </div>
-              <div class="greet__price-value greet__price-value--new">
-                3490 р.
-              </div>
-            </div>
-          </div>
-
-          <div class="greet__order-wrap">
-            <a class="greet__order-button order-button--red" href="#">
-              Заказать со скидкой
-            </a>
-            <span class="greet__order-arrow"></span>
-          </div>
+          <div class="forum__img-wrap"><img class="forum__img" src="img/forum.png"/></div>
         </div>
       </div>
     </div>
-  </div>
-
-
-
-  <div class="section about">
-    <div class="wrapper about__wrapper">
-      <div class="collage">
-        <div class="collage__item"><img src="img/greet-collage-item-1.jpg" alt="watch photo" class="collage__img"></div>
-        <div class="collage__item"><img src="img/greet-collage-item-2.jpg" alt="watch photo" class="collage__img"></div>
-        <div class="collage__item"><img src="img/greet-collage-item-3.jpg" alt="watch photo" class="collage__img"></div>
-      </div>
-      <div class="about__heading">
-        <h2 class="about__heading-title">
-          Элитные Армейские Часы «Rox» – выбор настоящих, сильных мужчин
-        </h2>
-        <p class="about__heading-description">
-          Армейские часы «Rox» являются показателем статуса и стиля своего владельца, этот аксессуар выгодно подчеркивает индивидуальный образ и гармонично вливается в выбранный стиль. 
-        </p>
-      </div>
-      <div class="about__items-wrap">
-        <div class="about__item">
-          <div class="about__item-picture"><img src="img/about-item-1.png" alt="" class="about__item-img"></div>
-          <div class="about__item-content">
-            <div class="about__item-title">
-              Элитный бренд
-            </div>
-            <div class="about__item-content">
-              “Rox” –  известный производитель часов, получивший популярность во многих странах мира. Купив часы данного бренда, Вы всегда будете находиться в центре внимания, подчеркнете свою мужественность и чувство вкуса.
-            </div>
-          </div>
+    <div class="section services">
+      <div class="wrapper">
+        <div class="services__heading">
+          <h2 class="title title--dark">Что Вы сможете получить заказав создание сайта форума в веб-студии PRO-SITE?</h2>
         </div>
-        <div class="about__item">
-          <div class="about__item-picture"><img src="img/about-item-2.png" alt="Высокое качество" class="about__item-img"></div>
-          <div class="about__item-content">
-            <div class="about__item-title">
-              Высокое качество
+        <ul class="services__main">
+          <li class="services__item" data-service="main" data-drop-parent="true">
+            <div class="services__item-heading">
+              <h3 class="services__item-title" data-drop-owner="data-drop-owner">Основное</h3>
             </div>
-            <div class="about__item-content">
-              Армейские часы “Rox” соединили в себе надежный механизм, удобство в использовании, безупречное качество, комфорт и неповторимый стиль. Разработаны для всех любителей стильных и функциональных аксессуаров.
+            <div class="services__item-main">
+              <ul class="services__item-list">
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Уникальный дизайн сайта</div>
+                  <div class="services__item-li-value">Разрабатывается профессиональным дизайнером по Вашим требованиям и пожеланиям.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Адаптивный сайт</div>
+                  <div class="services__item-li-value">Адаптивная верстка – создадим мобильную, планшетную и полноформатную версии страниц сайта.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Удобная административния панель</div>
+                  <div class="services__item-li-value">После разработки проекта, Вы сможете самостоятельно вносить любые изменения на форуме.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Неограниченное количество страниц</div>
+                  <div class="services__item-li-value">Ваш форум не будет иметь ограничений по количеству страниц и Вы сможете всегда расширять и дополнять контент.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Базовое наполнение сайта</div>
+                  <div class="services__item-li-value">В среднем состоит из 5-10 страниц сайта.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Быстрая загрузка сайта</div>
+                  <div class="services__item-li-value">При создании сайта мы его максимально оптимизируем, скорость загрузки сайта Вас приятно удивит.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Домен и хостинг в подарок</div>
+                  <div class="services__item-li-value">Подарим хостинг на 30 дней и домен на 1 год.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Почта на Вашем домене</div>
+                  <div class="services__item-li-value">Мы настроим почту на Вашем домене, и Вы самостоятельно сможете добавлять и администрировать почтовые ящики.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Форма обратной связи</div>
+                  <div class="services__item-li-value">Позволяет пользователям отправлять Вам сообщения с сайта, тем самым Вы можете оказывать поддержку пользователей.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Предоставляем инструкцию</div>
+                  <div class="services__item-li-value">Которая позволит Вам и Вашим сотрудникам без труда разобраться в управлении форумом.</div>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="about__item">
-          <div class="about__item-picture"><img src="img/about-item-3.png" alt="Совершенный дизайн" class="about__item-img"></div>
-          <div class="about__item-content">
-            <div class="about__item-title">
-              Совершенный дизайн
+          </li>
+          <li class="services__item" data-service="functions" data-drop-parent="true">
+            <div class="services__item-heading">
+              <h3 class="services__item-title" data-drop-owner="data-drop-owner">Функционал сайта</h3>
             </div>
-            <div class="about__item-content">
-              Стиль часов нисколько не принуждает их обладателя придерживаться спортивных деталей и в остальном. Классический цвет подойдет как к пиджаку, так и к будней одежде. Дизайн данной модели понравится любому мужчине.
+            <div class="services__item-main">
+              <ul class="services__item-list">
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Внедрение перехода в группы</div>
+                  <div class="services__item-li-value">Позволяет разместить на сайте иконки социальных сетей Facebook, Вконтакте, Google +1, Twitter с переходом в группы.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Интеграция Like социальных сетей</div>
+                  <div class="services__item-li-value">Позволяет разместить на сайте Like социальных сетей Facebook, Вконтакте, Google +1.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Интеграция групп социальных сетей</div>
+                  <div class="services__item-li-value">Позволяет разместить на сайте виджеты групп социальных сетей Facebook, Вконтакте.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Кросспостинг</div>
+                  <div class="services__item-li-value">Позволяет публиковать записи из новостной ленты сайта в аккаунтах Вконтакте, Facebook, Twitter и т.д.</div>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
+          </li>
+          <li class="services__item" data-service="social" data-drop-parent="true">
+            <div class="services__item-heading">
+              <h3 class="services__item-title" data-drop-owner="data-drop-owner">Социальная подготовка</h3>
+            </div>
+            <div class="services__item-main">
+              <ul class="services__item-list">
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Внедрение перехода в группы</div>
+                  <div class="services__item-li-value">Позволяет разместить на сайте иконки социальных сетей Facebook, Вконтакте, Google +1, Twitter с переходом в группы.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Интеграция Like социальных сетей</div>
+                  <div class="services__item-li-value">Позволяет разместить на сайте Like социальных сетей Facebook, Вконтакте, Google +1.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Интеграция групп социальных сетей</div>
+                  <div class="services__item-li-value">Позволяет разместить на сайте виджеты групп социальных сетей Facebook, Вконтакте.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Кросспостинг</div>
+                  <div class="services__item-li-value">Позволяет публиковать записи из новостной ленты сайта в аккаунтах Вконтакте, Facebook, Twitter и т.д.</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item" data-service="increase" data-drop-parent="true">
+            <div class="services__item-heading">
+              <h3 class="services__item-title" data-drop-owner="data-drop-owner">Подготовка к раскрутке</h3>
+            </div>
+            <div class="services__item-main">
+              <ul class="services__item-list">
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Установка ЧПУ адресов страниц.</div>
+                  <div class="services__item-li-value">Делает ссылки сайта короткими и понятными для людей, а так же позволяет поисковыми машинами Google, Яндекс распознавать содержимое страниц сайта по URL.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Создание Sitemap</div>
+                  <div class="services__item-li-value">Создание XML-карты сайта для более быстрой работы с поисковыми машинами Яндекс и Google.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">SSL сертификат в подарок</div>
+                  <div class="services__item-li-value">Это вызовет большее доверие посетителей Вашего сайта и очень хорошо скажется на SEO продвижении</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Добавление в Яндекс и Google</div>
+                  <div class="services__item-li-value">Добавление страниц сайта в индекс самых популярных поисковиков Яндекс и Google.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Добавление текстов для SEO продвижения</div>
+                  <div class="services__item-li-value">Вы сможете добавлять тексты на любые типы страниц для успешного SEO продвижения: категории, подкатегории, страницы производителей, товарные карточки, страницы фильтров.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Составим семантическое ядро</div>
+                  <div class="services__item-li-value">до 400 ключевых слов с группировкой и ручной чисткой от пустышек</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Заполним метатеги Description и Title</div>
+                  <div class="services__item-li-value">до 10 страниц ключевыми запросами, чтобы из поиска вскоре получать посетителей</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Подключение систем аналитики</div>
+                  <div class="services__item-li-value">Яндекс метрика и Google Analytics. Это позволит видеть посещаемость и поведение Ваших посетителей сайта.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Адаптированный сайт к SEO продвижению</div>
+                  <div class="services__item-li-value">Вы получите сайт готовый к SEO продвижению в поисковых системах Яндекс и Google.</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="services__item" data-service="safety" data-drop-parent="true">
+            <div class="services__item-heading">
+              <h3 class="services__item-title" data-drop-owner="data-drop-owner">Безопасность</h3>
+            </div>
+            <div class="services__item-main">
+              <ul class="services__item-list">
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Автоматическое резервное копирование сайта</div>
+                  <div class="services__item-li-value">Позволяет настроить систему по созданию ежедневных копий сайта.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Шифрование адреса области администратора</div>
+                  <div class="services__item-li-value">Позволяет скрыть адрес в области администратора сайта для защиты от систем автоматического подбора паролей.</div>
+                </li>
+                <li class="services__item-li">
+                  <div class="services__item-li-title">Защита от взлома и вирусов</div>
+                  <div class="services__item-li-value">Внедрим защиту от общеизвестных атак, файловой системы и базы данных, от вирусов, защиту по ip и т.д.</div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="services__also">Кроме этого можем разработать любые функции для Вашего сайта.</div>
       </div>
     </div>
-  </div>
-
-
-
-  <!-- slogan section -->
-  <div class="section slogan">
-    <div class="wrapper slogan__wrapper">
-      <h2 class="slogan__title">
-        Надежные Армейские Часы «Rox» – воплощение мужественности и стиля
-      </h2>
-    </div>
-  </div>
-
-
-
-  <!-- features section -->
-  <div class="section features">
-    <div class="wrapper features__wrapper">
-      <div class="features__photo-wrap">
-        <img src="img/features-image.png" alt="Watches photo" class="features__img">
-      </div>
-      <div class="features__content-wrap">
-        <div class="features__title">
-          ОСНОВНЫЕ ХАРАКТЕРИСТИКИ:
+    <div class="section advant">
+      <div class="wrapper advant__wrapper">
+        <div class="advant__heading">
+          <div class="title title--light">Преимущества веб-студии PRO-SITE</div>
         </div>
-        <div class="features__items-wrap">
-          <div class="features__item">
-            <div class="features__item-title">
-              Диаметр:
+        <ul class="advant__main">
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="prof">
+              <div class="advant__item-title">Профессионализм команды</div>
+              <div class="advant__item-value">Наши специалисты имеют многолетний опыт в создании и продвижении сайтов любой сложности.</div>
             </div>
-            <div class="features__item-value">
-              50 мм
+          </li>
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="seo">
+              <div class="advant__item-title">SEO оптимизация сайта</div>
+              <div class="advant__item-value">Вы получите сайт готовый к SEO продвижению в поисковых системах Яндекс и Google.</div>
             </div>
-          </div>
-          <div class="features__item">
-            <div class="features__item-title">
-              Материал корпуса:
+          </li>
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="adapt">
+              <div class="advant__item-title">Адаптивный сайт</div>
+              <div class="advant__item-value">Ваш сайт будет одинаково хорошо смотреться во всех браузерах и на всех устройствах</div>
             </div>
-            <div class="features__item-value">
-              сталь
+          </li>
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="admin">
+              <div class="advant__item-title">Удобная админ панель</div>
+              <div class="advant__item-value">После разработки проекта, Вы сможете самостоятельно вносить любые изменения на своём сайте.</div>
             </div>
-          </div>
-          <div class="features__item">
-            <div class="features__item-title">
-              Ширина ремешка:
+          </li>
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="speed">
+              <div class="advant__item-title">Быстрая загрузка сайта</div>
+              <div class="advant__item-value">При создании сайта мы его максимально оптимизируем, скорость загрузки сайта Вас приятно удивит.</div>
             </div>
-            <div class="features__item-value">
-              17 мм
+          </li>
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="safe">
+              <div class="advant__item-title">Защита от вирусов и взлома</div>
+              <div class="advant__item-value">Внедрим защиту: админ-панели, файловой системы и базы данных, от подбора паролей, ежедневное резервное копирование и многое другое.</div>
             </div>
-          </div>
-          <div class="features__item">
-            <div class="features__item-title">
-              материал ремешка:
+          </li>
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="design">
+              <div class="advant__item-title">Уникальный дизайн</div>
+              <div class="advant__item-value">Мы следим за последними трендами в веб-дизайне и делаем современные сайты. Вы получите повышение конверсии и юзабилити сайта.</div>
             </div>
-            <div class="features__item-value">
-              высокопрочный текстиль
+          </li>
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="accessible">
+              <div class="advant__item-title">Доступные цены</div>
+              <div class="advant__item-value">Мы предлагаем качественное выполнение услуг по разумным ценам. Наш приоритет - долгосрочная работа с клиентами.</div>
             </div>
-          </div>
-          <div class="features__item">
-            <div class="features__item-title">
-              Вес изделия:
+          </li>
+          <li class="advant__item">
+            <div class="advant__item-main" data-advant="sale">
+              <div class="advant__item-title">Создаём продающие сайты</div>
+              <div class="advant__item-value">Наша веб-студия создает сайты, которые успешно продают и становятся основным бизнесом наших клиентов.</div>
             </div>
-            <div class="features__item-value">
-              80 гр
-            </div>
-          </div>
-          <div class="features__item">
-            <div class="features__item-title">
-              производитель:
-            </div>
-            <div class="features__item-value">
-              Бельгия
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
+        <div class="order__wrap"><a class="order__link" href="#">Заказать форум</a></div>
       </div>
     </div>
-  </div>
-
-
-</body>
+  </body>
 </html>

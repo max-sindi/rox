@@ -1,0 +1,94 @@
+
+-
+ var logoLink = '#',
+   logoSrc = 'img/logo.png',
+   logoAlt = 'Pro-Site logo',
+   sandboxLink = 'mailto:#',
+   dropdownedListsAmount = 2,
+   navItems = [
+    {
+      haveDropdownList: true,
+      value: 'Создание сайта',
+      href: '#',
+      dropdownList: [
+        {
+          value: 'SEO продвижение',
+          href: '#',
+        },
+        {
+          value: 'Контекстная реклама',
+          href: '#',
+        },
+        {
+          value: 'Баннерная реклама',
+          href: '#',
+        },
+      ]
+    },
+    {
+      haveDropdownList: true,
+      value: 'Продвижение сайта',
+      href: '#',
+      dropdownList: [
+        {
+          value: 'SEO продвижение',
+          href: '#',
+        },
+        {
+          value: 'Контекстная реклама',
+          href: '#',
+        },
+        {
+          value: 'Баннерная реклама',
+          href: '#',
+        },
+      ]
+    },
+    {
+      value: 'Портфолио',
+      href: '#',
+    },
+    {
+      value: 'Отзывы',
+      href: '#',
+    },
+    {
+      value: 'О компании',
+      href: '#',
+    },
+  ],
+  order = {
+    value: 'Заказать',
+    href: '#',
+  };
+
+header.header
+  .wrapper.header__wrapper
+    .header__logo-wrap
+      a.header__logo-link(href=logoLink)
+        img.header__logo-img(src=logoSrc alt=logoAlt)
+
+    .header__sandbox-wrap
+      a.header__sandbox-link(href=sandboxLink)
+
+    .header__nav-wrap
+      nav.header__nav
+        ul.header__nav-list
+
+          each val in navItems
+            if val.dropdownList
+              li.header__nav-item.has-dropdown
+                a.header__nav-link.header__nav-link--drop(href=val.href)=val.value
+                  //- span.header__nav-link-carret
+
+                .header__nav-drop-wrap
+                  ul.header__nav-drop-list
+                    each dropItem in val.dropdownList
+                      li.header__nav-drop-item
+                        a.header__nav-drop-link(href=dropItem.href)=dropItem.value
+            else 
+              li.header__nav-item
+                a.header__nav-link(href=val.href)=val.value
+
+    .header__order-wrap
+      a.header__order-link(href=order.href)=order.value

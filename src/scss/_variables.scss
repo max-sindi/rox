@@ -1,18 +1,20 @@
 // colors
-$bg-red: #e53621;
-$dark-gold: #cbcb75;
-$header-text-red: #e43521;
-$header-text-black: #222;
-$black-text: #222;
+$green-gray: #769a4e;
 
 //fonts
 $header-text-size: 20px;
-$museo: "Museo Sans Cyrl", sans-serif;
+$pfdin: "PFDin", sans-serif;
 
 //grid
-$wrapper-gutter: 10px;
-$lg-point: 960px - 1px;
-$sm-point: 640px - 1px;
+$wrapper-gutter: 15px;
+// $sm-point: 480px;
+$sm-point: 628px;
+$md-point: 992px;
+$lg-point: 1210px;
+
+$sm-width: $sm-point;
+$md-width: $md-point;
+$lg-width: $lg-point;
 
 // buttons
 $oder-button-red-bg-color: #f95428;
