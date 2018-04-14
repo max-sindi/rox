@@ -1,0 +1,29 @@
+.examples {
+  padding-top: 47px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &__heading {
+    margin-bottom: 26px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -13px;
+    margin-right: -13px;
+  }
+
+  &__item {
+    width: 375px;
+    height: 375px;
+    margin-top: 30px;
+    padding: 0 13px;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

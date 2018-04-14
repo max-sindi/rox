@@ -67,7 +67,7 @@
     flex-grow: 1;
     padding: 0 47px 60px;
 
-    @media (min-width: $sm-point) {
+    @media (min-width: $md-point) {
       padding-bottom: 0;
     }
   }
@@ -76,11 +76,11 @@
     min-width: 100%;
     text-align: center;
 
-    @media (min-width: $sm-point) {
+    @media (min-width: $md-point) {
       min-width: (100%/2);
     }
 
-    @media (min-width: $lg-point) {
+    @media (min-width: $xl-point) {
       min-width: (100%/3);
     }
 
@@ -97,7 +97,7 @@
     height: 60px;
     width: 50%;
 
-    @media (min-width: $sm-point) {
+    @media (min-width: $md-point) {
       width: 47px;
       height: auto;
       top: 0;

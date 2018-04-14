@@ -1,0 +1,65 @@
+.why {
+  padding-top: 65px;
+  padding-bottom: 70px;
+  overflow-x: hidden;
+  bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &__heading {
+    margin-bottom: 60px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $lg-point) {
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+
+  &__content-wrap {
+    max-width: 705px;
+    margin-bottom: 50px;
+
+    @media (min-width: $lg-point) {
+      margin-bottom: 0;
+      padding-right: 20px;
+    }
+  }
+
+  &__picture-wrap {
+    position: relative;
+    max-width: 632px;
+  }
+
+  &__texts-wrap {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-weight: 400;
+  }
+
+  &__conclusion {
+    font-size: 22px;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+
+  &__img {
+
+    @media (min-width: $lg-point) {
+      position: absolute;
+      width: auto;
+    }
+  }
+
+  &__button {
+
+    @media (min-width: $lg-point) {
+      margin-left: 0;
+    }
+  }
+}

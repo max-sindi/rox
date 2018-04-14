@@ -1,0 +1,112 @@
+.how {
+  padding-top: 68px;
+  padding-bottom: 50px;
+
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 85px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &:nth-of-type(9n+1),
+    &:nth-of-type(9n+2),
+    &:nth-of-type(9n+3),
+    &:nth-of-type(9n+4),
+    &:nth-of-type(9n+5) {
+      float: left;
+      width: 20%;
+
+      .how__item {
+        &-title {
+          min-height: 42px;
+        }
+      }
+    }
+
+    &:nth-of-type(9n+6),
+    &:nth-of-type(9n+7),
+    &:nth-of-type(9n+8),
+    &:nth-of-type(9n+9) {
+      float: right;
+      width: 25%;
+      order: 0;
+    }
+
+    &-count-wrap {
+      order: 2;
+    }
+
+    &-count {
+      min-width: 20px;
+      display: inline-block;
+      min-height: 20px;
+      font-size: 16px;
+      color: $green-gray;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+    }
+
+    &-title {
+      order: 1;
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+
+    &-value {
+      order: 3;
+      margin-top: 20px;
+      font-weight: 300;
+    }
+
+    &:nth-of-type(9n+1),
+    &:nth-of-type(9n+9) {
+
+      .how__item-count-wrap {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: ($xl-width - 30px);
+          top: 50%;
+          left: 0;
+          border-bottom: 1px dashed green;
+        }
+      }
+    }
+
+    &:nth-of-type(9n+5) {
+      .how__item-count-wrap {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 270px;
+          top: 50%;
+          right: 0;
+          transform: translateX(100%);
+          border: 1px dashed $green-gray;
+          border-radius: 99px;
+        }
+      }
+    }
+  }
+}

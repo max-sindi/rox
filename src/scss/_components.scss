@@ -1,3 +1,33 @@
+.button {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  background-color: $green-gray;
+}
+
+.button--sm {
+  @extend .button;
+  max-width: 192px;
+}
+
+.button--md {
+  @extend .button;
+  max-width: 280px;
+}
+
+.button--lg {
+  @extend .button;
+  max-width: 355px;
+  padding: 9px;
+}
+
 .has-dash {
   position: relative;
 
@@ -46,6 +76,14 @@
   }
 }
 
+.text {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: (22/18);
+  color: #4d4d4d;
+}
+
 .order {
   &__link {
     display: block;
@@ -61,4 +99,8 @@
     background-color: $green-gray;
     border-radius: 5px;
   }
+}
+
+.section__img {
+  width: 100%;
 }

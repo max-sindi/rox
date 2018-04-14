@@ -1,0 +1,74 @@
+.people {
+  padding-top: 68px;
+  padding-bottom: 50px;
+
+  &__heading {
+    margin-bottom: 25px;
+  }
+
+  &__title-descr {
+    margin-top: 46px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &__items-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -50px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin-top: 50px;
+    padding-top: 135px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 61px;
+      transform: translate(-50%, -50%);
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 120px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      box-sizing: border-box;
+      border: 1px dashed #ccc;
+      border-radius: 50%;
+    }
+
+    @media (min-width: $xl-point) {
+      max-width: 372px;
+    }
+
+    &-title {
+      margin-bottom: 13px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #191919
+    }
+
+    &-value {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.3;
+    }
+  }
+}

@@ -20,7 +20,7 @@
       left: 35px;
       background: url('../img/icons/right-control.png') no-repeat;
 
-      @media (min-width: $sm-point) {
+      @media (min-width: $md-point) {
         right: 24px;
         left: auto;
       }
@@ -32,7 +32,7 @@
       right: 35px;
       background: url('../img/icons/left-control.png') no-repeat;
 
-      @media (min-width: $sm-point) {
+      @media (min-width: $md-point) {
         right: auto;
         left: 24px;
       }
@@ -168,5 +168,143 @@
       }
     }
 
+  }
+}
+
+.people {
+  &__item {
+    &[data-people="market"] {
+      &::before {
+        width: 54px;
+        height: 65px;
+        background-image: url('../img/icons/people-market.png');
+      }
+    }
+
+    &[data-people="promote"] {
+      &::before {
+        width: 71px;
+        height: 62px;
+        background-image: url('../img/icons/people-promote.png');
+      }
+    }
+
+    &[data-people="design"] {
+      &::before {
+        width: 59px;
+        height: 59px;
+        background-image: url('../img/icons/people-design.png');
+      }
+    }
+
+    &[data-people="frontend"] {
+      &::before {
+        width: 65px;
+        height: 60px;
+        background-image: url('../img/icons/people-frontend.png');
+      }
+    }
+
+    &[data-people="backend"] {
+      &::before {
+        width: 66px;
+        height: 66px;
+        background-image: url('../img/icons/people-backend.png');
+      }
+    }
+
+    &[data-people="manage"] {
+      &::before {
+        width: 65px;
+        height: 65px;
+        background-image: url('../img/icons/people-manage.png');
+      }
+    }
+
+  }
+}
+
+.how {
+  &__item {
+
+    &[data-how="breef"] {
+      &::before {
+        width: 57px;
+        height: 57px;
+        background-image: url('../img/icons/how-breef');
+      }
+    }
+
+    &[data-how="business"] {
+      &::before {
+        width: 59px;
+        height: 53px;
+        background-image: url('../img/icons/how-business.png');
+      }
+    }
+
+    &[data-how="proto"] {
+      &::before {
+        width: 46px;
+        height: 60px;
+        background-image: url('../img/icons/how-proto.png');
+      }
+    }
+
+    &[data-how="design"] {
+      &::before {
+        width: 51px;
+        height: 61px;
+        background-image: url('../img/icons/how-design.png');
+      }
+    }
+
+    &[data-how="tech-task"] {
+      &::before {
+        width: 61px;
+        height: 61px;
+        background-image: url('../img/icons/how-tech-task.png');
+      }
+    }
+
+    &[data-how="breef"] {
+      &::before {
+        width: 57px;
+        height: 57px;
+        background-image: url('../img/icons/how-breef.png');
+      }
+    }
+
+    &[data-how="prog"] {
+      &::before {
+        width: 63px;
+        height: 58px;
+        background-image: url('../img/icons/how-prog.png');
+      }
+    }
+
+    &[data-how="fill"] {
+      &::before {
+        width: 50px;
+        height: 60px;
+        background-image: url('../img/icons/how-fill.png');
+      }
+    }
+
+    &[data-how="analitic"] {
+      &::before {
+        width: 60px;
+        height: 60px;
+        background-image: url('../img/icons/how-analitic.png');
+      }
+    }
+
+    &[data-how="finish"] {
+      &::before {
+        width: 68px;
+        height: 57px;
+        background-image: url('../img/icons/how-finish.png');
+      }
+    }
   }
 }
