@@ -1,0 +1,47 @@
+-
+ var items = [
+  {
+    title: 'Профессионализм',
+    value: 'Команда PRO-SITE – практики и предлагаем рынку только те услуги, в которых сами получили высокие результаты.',
+    dataGuarant: 'prof',
+  },
+  {
+    title: 'Свыше 7 лет на рынке',
+    value: 'Более 7 лет мы приносим огромную пользу своим заказчикам.',
+    dataGuarant: 'experience',
+  }, 
+  {
+    title: 'Портфолио, кейсы, отзывы',
+    value: 'Сами за нас говорят, что нам можно доверять и с нами сотрудничать. Посмотрите и убедитесь.',
+    dataGuarant: 'portfolio',
+  },
+  {
+    title: 'Нас рекомендуют знакомым и друзьям',
+    value: 'Достаточно много клиентов обращается к нам по рекомендации друзей, коллег и знакомых.',
+    dataGuarant: 'recommend',
+  },
+  {
+    title: 'Работа по договору',
+    value: 'Если необходима юридическая безопасность, мы заключаем с Вами договор.',
+    dataGuarant: 'contract',
+  },
+  {
+    title: 'Гарантии исполнения заказов',
+    value: 'Если Ваш заказ не будет выполнен, мы вернем денежные средства в полном объеме.',
+    dataGuarant: 'guarantee',
+  },
+ ];
+
+
+
+
+section.section.guarant
+  .wrapper
+    .guarant__heading
+      .title.title--light Какие гарантии Вы имеете сотрудничая с нами?
+    .guarant__main
+      ul.guarant__items-list
+        each item in items
+          li.guarant__item(data-guarant=item.dataGuarant)
+            .guarant__item-title=item.title
+            .guarant__item-value=item.value

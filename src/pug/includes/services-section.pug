@@ -152,14 +152,14 @@
   },
  ];
 
-.section.services
+section.section.services
   .wrapper
     .services__heading
       h2.title.title--dark Что Вы сможете получить заказав создание сайта форума в веб-студии PRO-SITE?
     ul.services__main
       each item in servicesItems
-        li.services__item(data-service=item.dataService data-drop-parent='true')
-          .services__item-heading
+        li.services__item
+          .services__item-heading.js-dropdown-click-handler(data-service-heading=item.dataService data-dropdown-parent='.services__item')
             h3.services__item-title(data-drop-owner)=item.title
           .services__item-main
             ul.services__item-list

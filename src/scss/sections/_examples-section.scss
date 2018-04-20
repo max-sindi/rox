@@ -1,22 +1,35 @@
 .examples {
   padding-top: 47px;
-  padding-bottom: 70px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 124px;
 
-  &__heading {
-    margin-bottom: 26px;
+  @media (min-width: $sm-point) {
+    padding-bottom: 70px;
+  }
+
+  &__main {
+    position: relative;
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: -13px;
-    margin-right: -13px;
+    max-width: 401px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: $lg-point) {
+      display: flex;
+      max-width: calc(100% + 26px);
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: -13px;
+      margin-right: -13px;
+    }
   }
 
   &__item {
-    width: 375px;
+    width: 100%;
+    max-width: 401px;
+    box-sizing: border-box;
     height: 375px;
     margin-top: 30px;
     padding: 0 13px;
@@ -24,6 +37,66 @@
     &-img {
       width: 100%;
       height: 100%;
+    }
+  }
+
+  &__controls-wrap {
+    position: absolute;
+    width: 100%;
+    height: 105px;
+    top: 100%;
+
+    @media (min-width: $sm-point) {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    @media (min-width: $lg-point) {
+      display: none;
+    }
+  }
+
+  &__control {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 50%;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 53px;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $sm-point) {
+      width: calc(50% - 220px);
+    }
+
+    &--right {
+      right: 0;
+
+      &::before {
+        left: 38px;
+
+        @media (min-width: $sm-width) {
+          left: 0;
+        }
+      }
+    }
+
+    &--left {
+      left: 0;
+
+      &::before {
+        right: 38px;
+
+        @media (min-width: $sm-point) {
+          right: 0;
+        }
+      }
     }
   }
 }

@@ -18,18 +18,21 @@ section.section.cover
       p.cover__heading-description К разработке интернет форума у веб-студии PRO-SITE особый подход. Доверив нам разработку под ключ, Вы получите сайт форума с уникальным веб-дизайном, удобной административной панелью и базовой SEO-оптимизацией.
 
     .cover__portfolio-wrap
-      .portfolio
+      .portfolio.carousel__wrap
         .portfolio__title-wrap
           span.portfolio__title Портфолио:
-        .portfolio__main
+        .portfolio__main.carousel__inner
           .portfolio__items-wrap
             each item in items
               .portfolio__item
                 img.portfolio__portfolio-img(src=`img/${item.url}`)
-          span.portfolio__control.portfolio__control--left
+            each item in items
+              .portfolio__item
+                img.portfolio__portfolio-img(src=`img/${item.url}`)
+          span.portfolio__control.portfolio__control--left#portfolio-left
             span.portfolio__control-icon
-          span.portfolio__control.portfolio__control--right
+          span.portfolio__control.portfolio__control--right#portfolio-right
             span.portfolio__control-icon
 
-    .order__wrap
+    .order__wrap.cover__order-wrap
       a.order__link(href='#') Заказать форум

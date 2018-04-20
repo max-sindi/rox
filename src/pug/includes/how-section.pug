@@ -47,12 +47,12 @@
   },
  ];
 
-.section.how
+section.section.how
   .wrapper
     .how__heading
       .title.title--dark Как происходит работа
     .how__main
-      ul.how__items-list
+      ul.how__items-list.clearfix
         each item, index in items
           li.how__item(data-how=item.dataHow)
             .how__item-count-wrap

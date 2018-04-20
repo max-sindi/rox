@@ -1,0 +1,116 @@
+-
+ var items = [
+  {
+    title: 'Создание сайтов',
+    list: [
+      [
+        {
+          value: 'Landing page',
+          href: '#',
+        },
+        {
+          value: 'Сайт-Визитка',
+          href: '#',
+        },
+        {
+          value: 'Интернет-магазин',
+          href: '#',
+        },
+        {
+          value: 'Сайт-Каталог',
+          href: '#',
+        },
+        {
+          value: 'Корпоративный (Бизнес) сайт',
+          href: '#',
+        },
+      ],
+      [
+        {
+          value: 'Официальный сайт',
+          href: '#',
+        },
+        {
+          value: 'Информационный портал',
+          href: '#',
+        },
+        {
+          value: 'Новостной Сайт',
+          href: '#',
+        },
+        {
+          value: 'Форум',
+          href: '#',
+        },
+      ],
+    ],
+  },
+  {
+    title: 'Продвижение сайтов ',
+    list: [
+      [
+        {
+          value: 'SEO-продвижение',
+          href: '#',
+        },
+        {
+          value: 'Контекстная Реклама',
+          href: '#',
+        },
+        {
+          value: 'Баннерная реклама',
+          href: '#',
+        },
+      ]
+    ],
+  },
+  {
+    title: 'Компания',
+    list: [
+      [
+        {
+          value: 'О компании',
+          href: '#',
+        },
+        {
+          value: 'Портфолио',
+          href: '#',
+        },
+        {
+          value: 'Отзывы',
+          href: '#',
+        },
+      ]
+    ],
+  },
+  {
+    title: 'Контакты',
+    list: [
+      [
+        {
+          value: 'Обратная связь',
+          href: '#',
+        },
+        {
+          value: 'info@pro-site.ru',
+          href: '#',
+        },
+      ]
+    ],
+  },
+ ];
+
+footer.section.footer
+  .wrapper
+    .footer__main
+      each item in items
+        .footer__item
+          .footer__item-title=item.title
+          .footer__item-main
+            each part in item.list
+              ul.footer__item-part
+                each li in part
+                  li.footer__item-li
+                    a.footer__item-link(href=li.href)=li.value
+    .footer__sign-wrap
+      .footer__sign © 2011-2018 Digital Agency PRO-SITE. Все права защищены. Любое использование материалов сайта возможно лишь с разрешения правообладателя.

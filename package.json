@@ -19,5 +19,6 @@
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.4",
     "gutil": "^1.6.4"
-  }
+  },
+  "dependencies": {}
 }

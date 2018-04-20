@@ -42,3 +42,29 @@
     }
   }
 }
+
+.faq {
+
+  &__item {
+    &-main {
+      display: none;
+    }
+
+    &.opened {
+      .faq__item {
+
+        &-heading {
+          background-color: #d1d1d1;
+        }
+
+        &-title {
+          color: #fff;
+        }
+
+        &-main {
+          display: block;
+        }
+      }
+    }
+  }
+}

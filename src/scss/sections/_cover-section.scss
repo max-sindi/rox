@@ -1,34 +1,40 @@
 .cover {
-  padding-top: 60px;
-  padding-bottom: 132px;
+  padding-top: 97px;
+  padding-bottom: 170px;
+
+  @media (min-width: $md-point) {
+    padding-top: 70px;
+    padding-bottom: 132px;
+  }
 
   &__heading {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #fff;
     text-align: center;
 
     &-title {
-      margin-bottom: 50px;
-      font-size: 43px;
+      margin-bottom: 37px;
+      font-size: 40px;
 
-      @media (min-width: $sm-point) {
+      @media (min-width: $md-point) {
         font-size: 70px;
+        margin-bottom: 50px;
       }
     }
 
     &-description {
-      font-size: 18px;
+      font-size: 22px;
       font-weight: 300;
       line-height: 1.4;
-
-      @media (min-width: $sm-point) {
-        font-size: 22px;
-      }
     }
   }
 
-  &__portfolio-wrap {
-    margin-bottom: 25px;
+  &__order-wrap {
+    margin-top: 20px;
+
+    @media (min-width: $lg-point) {
+      margin-top: 25px;
+    }
   }
 }
 
@@ -50,12 +56,10 @@
     color: #fff;
 
     &-wrap {
-      margin-bottom: 20px;
-      padding-top: 20px;
+      padding-top: 15px;
       text-align: center;
 
       @media (min-width: $lg-point) {
-        margin-bottom: 0;
         padding-left: 30px;
         padding-right: 20px;
       }
@@ -73,21 +77,14 @@
   }
 
   &__item {
-    min-width: 100%;
     text-align: center;
 
-    @media (min-width: $md-point) {
-      min-width: (100%/2);
-    }
-
-    @media (min-width: $xl-point) {
-      min-width: (100%/3);
-    }
-
     &s-wrap {
-      display: flex;
-      align-items: center;
-      overflow: hidden;
+      padding-top: 20px;
+
+      @media (min-width: $md-point) {
+        padding-top: 35px;
+      }
     }
   }
 
@@ -96,6 +93,7 @@
     bottom: 0;
     height: 60px;
     width: 50%;
+    opacity: 0.5;
 
     @media (min-width: $md-point) {
       width: 47px;

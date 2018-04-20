@@ -8,37 +8,42 @@
   </head>
   <body>
     <header class="header">
-      <div class="wrapper header__wrapper">
-        <div class="header__logo-wrap"><a class="header__logo-link" href="#"><img class="header__logo-img" src="img/logo.png" alt="Pro-Site logo"/></a></div>
-        <div class="header__sandbox-wrap"><a class="header__sandbox-link" href="mailto:#"></a></div>
-        <div class="header__nav-wrap">
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__nav-item has-dropdown"><a class="header__nav-link header__nav-link--drop" href="#">Создание сайта</a>
-                <div class="header__nav-drop-wrap">
-                  <ul class="header__nav-drop-list">
-                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">SEO продвижение</a></li>
-                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Контекстная реклама</a></li>
-                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Баннерная реклама</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__nav-item has-dropdown"><a class="header__nav-link header__nav-link--drop" href="#">Продвижение сайта</a>
-                <div class="header__nav-drop-wrap">
-                  <ul class="header__nav-drop-list">
-                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">SEO продвижение</a></li>
-                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Контекстная реклама</a></li>
-                    <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Баннерная реклама</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#">Портфолио</a></li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#">Отзывы</a></li>
-              <li class="header__nav-item"><a class="header__nav-link" href="#">О компании</a></li>
-            </ul>
-          </nav>
+      <div class="wrapper">
+        <div class="header__inner">
+          <div class="header__logo-wrap"><a class="header__logo-link" href="#"><img class="header__logo-img" src="img/logo.png" alt="Pro-Site logo"/></a></div>
+          <div class="header__sandbox-wrap"><a class="header__sandbox-link" href="mailto:#"></a></div>
+          <div class="header__menu-wrap" id="header__menu-button-wrap">
+            <div class="menu-button flex-center"><span class="menu-button__stick"></span><span class="menu-button__stick"></span><span class="menu-button__stick"></span></div>
+          </div>
+          <div class="header__nav-wrap" id="header__nav-wrap">
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item has-dropdown"><a class="header__nav-link header__nav-link--drop" href="#">Создание сайта</a>
+                  <div class="header__nav-drop-wrap">
+                    <ul class="header__nav-drop-list">
+                      <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">SEO продвижение</a></li>
+                      <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Контекстная реклама</a></li>
+                      <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Баннерная реклама</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__nav-item has-dropdown"><a class="header__nav-link header__nav-link--drop" href="#">Продвижение сайта</a>
+                  <div class="header__nav-drop-wrap">
+                    <ul class="header__nav-drop-list">
+                      <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">SEO продвижение</a></li>
+                      <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Контекстная реклама</a></li>
+                      <li class="header__nav-drop-item"><a class="header__nav-drop-link" href="#">Баннерная реклама</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Портфолио</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Отзывы</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">О компании</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__order-wrap"><a class="header__order-link" href="#">Заказать</a></div>
         </div>
-        <div class="header__order-wrap"><a class="header__order-link" href="#">Заказать</a></div>
       </div>
     </header>
     <section class="section cover">
@@ -48,44 +53,47 @@
           <p class="cover__heading-description">К разработке интернет форума у веб-студии PRO-SITE особый подход. Доверив нам разработку под ключ, Вы получите сайт форума с уникальным веб-дизайном, удобной административной панелью и базовой SEO-оптимизацией.</p>
         </div>
         <div class="cover__portfolio-wrap">
-          <div class="portfolio">
+          <div class="portfolio carousel__wrap">
             <div class="portfolio__title-wrap"><span class="portfolio__title">Портфолио:</span></div>
-            <div class="portfolio__main">
+            <div class="portfolio__main carousel__inner">
               <div class="portfolio__items-wrap">
                 <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-1.png"/></div>
                 <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-2.png"/></div>
                 <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-3.png"/></div>
-              </div><span class="portfolio__control portfolio__control--left"><span class="portfolio__control-icon"></span></span><span class="portfolio__control portfolio__control--right"><span class="portfolio__control-icon"></span></span>
+                <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-1.png"/></div>
+                <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-2.png"/></div>
+                <div class="portfolio__item"><img class="portfolio__portfolio-img" src="img/portfolio-item-3.png"/></div>
+              </div><span class="portfolio__control portfolio__control--left" id="portfolio-left"><span class="portfolio__control-icon"></span></span><span class="portfolio__control portfolio__control--right" id="portfolio-right"><span class="portfolio__control-icon"></span></span>
             </div>
           </div>
         </div>
-        <div class="order__wrap"><a class="order__link" href="#">Заказать форум</a></div>
+        <div class="order__wrap cover__order-wrap"><a class="order__link" href="#">Заказать форум</a></div>
       </div>
     </section>
-    <div class="section forum">
+    <section class="section forum bot-line">
       <div class="wrapper">
         <div class="forum__heading">
           <h2 class="title title--dark">Что такое форум?</h2>
         </div>
-        <div class="forum__main">
+        <div class="forum__main flex-adaptive">
           <div class="forum__text-wrap">
             <p class="forum__text text">Форум представляет собой интернет – площадку, созданную специально для общения ее посетителей, обмена мнениями, обсуждения тем, продуктов потребительского спроса, а также для складчин, чтобы совместно покупать какие-либо инфо-продукты.</p>
             <p class="forum__text text">Форум может быть как самостоятельным сайтом, так и частью основного сайта.</p>
             <p class="forum__text text">Форум может быстро продвигаться в выдаче поисковых систем, благодаря общению посетителей, так как они создают уникальный контент в процессе общения. В основном это – низкочастотные запросы индивидуального и редкого назначения. Такой трафик считается очень качественным.</p>
             <p class="forum__text text">Как правило, информация на форуме обновляется ежедневно за счёт новых сообщений, этот фактор для поисковых систем является очень положительным и способствует быстрому продвижению.</p>
           </div>
-          <div class="forum__img-wrap"><img class="forum__img" src="img/forum.png"/></div>
+          <div class="forum__img-wrap"><img class="forum__img" src="img/forum.png" alt="Forum example"/></div>
         </div>
       </div>
-    </div>
-    <div class="section services">
+    </section>
+    <section class="section services">
       <div class="wrapper">
         <div class="services__heading">
           <h2 class="title title--dark">Что Вы сможете получить заказав создание сайта форума в веб-студии PRO-SITE?</h2>
         </div>
         <ul class="services__main">
-          <li class="services__item" data-service="main" data-drop-parent="true">
-            <div class="services__item-heading">
+          <li class="services__item">
+            <div class="services__item-heading js-dropdown-click-handler" data-service-heading="main" data-dropdown-parent=".services__item">
               <h3 class="services__item-title" data-drop-owner="data-drop-owner">Основное</h3>
             </div>
             <div class="services__item-main">
@@ -133,8 +141,8 @@
               </ul>
             </div>
           </li>
-          <li class="services__item" data-service="functions" data-drop-parent="true">
-            <div class="services__item-heading">
+          <li class="services__item">
+            <div class="services__item-heading js-dropdown-click-handler" data-service-heading="functions" data-dropdown-parent=".services__item">
               <h3 class="services__item-title" data-drop-owner="data-drop-owner">Функционал сайта</h3>
             </div>
             <div class="services__item-main">
@@ -158,8 +166,8 @@
               </ul>
             </div>
           </li>
-          <li class="services__item" data-service="social" data-drop-parent="true">
-            <div class="services__item-heading">
+          <li class="services__item">
+            <div class="services__item-heading js-dropdown-click-handler" data-service-heading="social" data-dropdown-parent=".services__item">
               <h3 class="services__item-title" data-drop-owner="data-drop-owner">Социальная подготовка</h3>
             </div>
             <div class="services__item-main">
@@ -183,8 +191,8 @@
               </ul>
             </div>
           </li>
-          <li class="services__item" data-service="increase" data-drop-parent="true">
-            <div class="services__item-heading">
+          <li class="services__item">
+            <div class="services__item-heading js-dropdown-click-handler" data-service-heading="increase" data-dropdown-parent=".services__item">
               <h3 class="services__item-title" data-drop-owner="data-drop-owner">Подготовка к раскрутке</h3>
             </div>
             <div class="services__item-main">
@@ -228,8 +236,8 @@
               </ul>
             </div>
           </li>
-          <li class="services__item" data-service="safety" data-drop-parent="true">
-            <div class="services__item-heading">
+          <li class="services__item">
+            <div class="services__item-heading js-dropdown-click-handler" data-service-heading="safety" data-dropdown-parent=".services__item">
               <h3 class="services__item-title" data-drop-owner="data-drop-owner">Безопасность</h3>
             </div>
             <div class="services__item-main">
@@ -252,8 +260,8 @@
         </ul>
         <div class="services__also">Кроме этого можем разработать любые функции для Вашего сайта.</div>
       </div>
-    </div>
-    <div class="section advant">
+    </section>
+    <section class="section advant">
       <div class="wrapper advant__wrapper">
         <div class="advant__heading">
           <div class="title title--light">Преимущества веб-студии PRO-SITE</div>
@@ -314,16 +322,16 @@
             </div>
           </li>
         </ul>
-        <div class="order__wrap"><a class="order__link" href="#">Заказать форум</a></div>
+        <div class="advant__order-wrap order__wrap"><a class="order__link" href="#">Заказать форум</a></div>
       </div>
-    </div>
-    <div class="section examples">
+    </section>
+    <section class="section examples bot-line">
       <div class="wrapper">
         <div class="examples__heading">
           <div class="exaples__title title title--dark">Примеры форумов</div>
         </div>
         <div class="examples__main">
-          <ul class="examples__list">
+          <ul class="examples__list carousel" id="examples__carousel">
             <li class="examples__item"><img class="examples__item-img" src="img/example-fake.png"/></li>
             <li class="examples__item"><img class="examples__item-img" src="img/example-fake.png"/></li>
             <li class="examples__item"><img class="examples__item-img" src="img/example-fake.png"/></li>
@@ -331,39 +339,63 @@
             <li class="examples__item"><img class="examples__item-img" src="img/example-fake.png"/></li>
             <li class="examples__item"><img class="examples__item-img" src="img/example-fake.png"/></li>
           </ul>
+          <div class="examples__controls-wrap" id="examples__controls-wrap" hidden="hidden"><span class="examples__control examples__control--left" id="examples-left"></span><span class="examples__control examples__control--right" id="examples-right"></span></div>
         </div>
       </div>
-    </div>
-    <div class="section comments">
+    </section>
+    <section class="section comments">
       <div class="wrapper comments__wrapper">
         <div class="comments__heading">
           <div class="comments__title title title--dark">Отзывы</div>
         </div>
         <div class="comments__main">
-          <div class="comments__content-wrap">
-            <div class="comments__content">
-              <div class="comments__avatar-wrap">
-                <div class="comments__avatar-box"><img class="comments__avatar-img" src="img/comments-avatar.png"/></div>
-              </div>
-              <div class="comments__texts-wrap">
-                <p class="text">За время сотрудничества со студией создания сайтов PRO-Site команда разработчиков показала свою способность с полной ответственностью подходить к поставленным задачам, выполнять задачи качественно и в срок. Отличительной чертой работы является высокий профессионализм, коммуникабельность и заинтересованность в выполняемой работе. Рекомендуем студию как надежного и стабильного партнёра.</p>
-                <div class="comments__who">
-                  <div class="comments__who-name">Андрей Добровольский,</div>
-                  <div class="comments__who-position">Основатель cети гриль баров "ШашлыкоFF"</div>
+          <div class="comment__item">
+            <div class="comments__content-wrap">
+              <div class="comments__content">
+                <div class="comments__avatar-wrap">
+                  <div class="comments__avatar-box"><img class="comments__avatar-img" src="img/comments-avatar.png"/></div>
+                </div>
+                <div class="comments__texts-wrap">
+                  <p class="text">За время сотрудничества со студией создания сайтов PRO-Site команда разработчиков показала свою способность с полной ответственностью подходить к поставленным задачам, выполнять задачи качественно и в срок. Отличительной чертой работы является высокий профессионализм, коммуникабельность и заинтересованность в выполняемой работе. Рекомендуем студию как надежного и стабильного партнёра.</p>
+                  <div class="comments__who">
+                    <div class="comments__who-name">Андрей Добровольский,</div>
+                    <div class="comments__who-position">Основатель cети гриль баров &quot;ШашлыкоFF&quot;</div>
+                  </div>
                 </div>
               </div>
+              <div class="comments__order-wrap"><a class="comments__order-link" href="#">Смотреть все отзывы</a></div>
             </div>
-            <div class="comments__order-wrap"><a class="comments__order-link" href="#">Смотреть все отзывы</a></div>
+            <div class="comments__picture-wrap">
+              <div class="comments__img-wrap"><img class="comments__img" src="img/comment-picture.png"/></div>
+              <div class="comments__order-wrap"><a class="comments__order-link" href="#">Смотреть все кейсы</a></div>
+            </div>
           </div>
-          <div class="comments__picture-wrap">
-            <div class="comments__img-wrap"><img class="comments__img" src="img/comment-picture.png"/></div>
-            <div class="comments__order-wrap"><a class="comments__order-link" href="#">Смотреть все кейсы</a></div>
+          <div class="comment__item">
+            <div class="comments__content-wrap">
+              <div class="comments__content">
+                <div class="comments__avatar-wrap">
+                  <div class="comments__avatar-box"><img class="comments__avatar-img" src="img/comments-avatar.png"/></div>
+                </div>
+                <div class="comments__texts-wrap">
+                  <p class="text">За время сотрудничества со студией создания сайтов PRO-Site команда разработчиков показала свою способность с полной ответственностью подходить к поставленным задачам, выполнять задачи качественно и в срок. Отличительной чертой работы является высокий профессионализм, коммуникабельность и заинтересованность в выполняемой работе. Рекомендуем студию как надежного и стабильного партнёра.</p>
+                  <div class="comments__who">
+                    <div class="comments__who-name">Андрей Добровольский,</div>
+                    <div class="comments__who-position">Основатель cети гриль баров &quot;ШашлыкоFF&quot;</div>
+                  </div>
+                </div>
+              </div>
+              <div class="comments__order-wrap"><a class="comments__order-link" href="#">Смотреть все отзывы</a></div>
+            </div>
+            <div class="comments__picture-wrap">
+              <div class="comments__img-wrap"><img class="comments__img" src="img/comment-picture.png"/></div>
+              <div class="comments__order-wrap"><a class="comments__order-link" href="#">Смотреть все кейсы</a></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section why">
-      <div class="wrapper why__wrapper">
+    </section>
+    <section class="section why bot-line">
+      <div class="wrapper">
         <div class="why__heading">
           <h2 class="why__title title title--dark">Почему выбирают веб-агентство PRO-SITE?</h2>
         </div>
@@ -384,8 +416,90 @@
           <div class="why__picture-wrap"><img class="why__img section__img" src="img/why-picture.png" alt="Site example"/></div>
         </div>
       </div>
-    </div>
-    <div class="people section">
+    </section>
+    <section class="section rate">
+      <div class="wrapper">
+        <div class="rate__heading">
+          <div class="title title--dark">Выберите вариант пакета услуг</div>
+        </div>
+        <div class="rate__table-wrap">
+          <table class="rate__table">
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">
+                <div class="rate__table-title">В тариф входит:</div>
+              </td>
+              <td class="rate__table-cell">
+                <div class="rate__table-title">Старт</div>
+              </td>
+              <td class="rate__table-cell">
+                <div class="rate__table-title">Бизнес</div>
+              </td>
+              <td class="rate__table-cell">
+                <div class="rate__table-title">VIP</div>
+              </td>
+            </tr>
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">Адаптивная верстка</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+            </tr>
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">Адаптивное меню</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+            </tr>
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">Кнопка переключения</td>
+              <td class="rate__table-cell rate__table-cell--false">-</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+            </tr>
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">Правка текущей верстки</td>
+              <td class="rate__table-cell rate__table-cell--false">-</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+            </tr>
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">Корректировка шаблона</td>
+              <td class="rate__table-cell rate__table-cell--false">-</td>
+              <td class="rate__table-cell rate__table-cell--false">-</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+            </tr>
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">Интернет-магазин</td>
+              <td class="rate__table-cell rate__table-cell--false">-</td>
+              <td class="rate__table-cell rate__table-cell--false">-</td>
+              <td class="rate__table-cell rate__table-cell--true">+</td>
+            </tr>
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">Срок выполнения</td>
+              <td class="rate__table-cell">2 дня</td>
+              <td class="rate__table-cell">2 дня</td>
+              <td class="rate__table-cell">2 дня</td>
+            </tr>
+            <tr class="rate__table-row">
+              <td class="rate__table-cell">Стоимость</td>
+              <td class="rate__table-cell">
+                <s class="rate__table-cell--old">1 090руб.</s><span class="rate__table-cell--new">500</span><span class="rate__table-cell-price-unit"> руб.</span><a class="rate__table-order button--sm" href="#">Заказать</a>
+              </td>
+              <td class="rate__table-cell">
+                <s class="rate__table-cell--old">2 990 руб.</s><span class="rate__table-cell--new">1 500</span><span class="rate__table-cell-price-unit"> руб.</span><a class="rate__table-order button--sm" href="#">Заказать</a>
+              </td>
+              <td class="rate__table-cell">
+                <s class="rate__table-cell--old">5 000 руб.</s><span class="rate__table-cell--new">3 000</span><span class="rate__table-cell-price-unit"> руб.</span><a class="rate__table-order button--sm" href="#">Заказать</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="rate__also-wrap">
+          <div class="rate__also">В зависимости от Ваших требований цены могут быть изменены в меньшую или большую сторону</div>
+        </div>
+      </div>
+    </section>
+    <section class="people section">
       <div class="wrapper">
         <div class="people__heading">
           <div class="title title--dark">Количество сотрудников</div>
@@ -420,14 +534,14 @@
           </ul>
         </div>
       </div>
-    </div>
-    <div class="section how">
+    </section>
+    <section class="section how">
       <div class="wrapper">
         <div class="how__heading">
           <div class="title title--dark">Как происходит работа</div>
         </div>
         <div class="how__main">
-          <ul class="how__items-list">
+          <ul class="how__items-list clearfix">
             <li class="how__item" data-how="breef">
               <div class="how__item-count-wrap">
                 <div class="how__item-count">1</div>
@@ -494,6 +608,194 @@
           </ul>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="section guarant">
+      <div class="wrapper">
+        <div class="guarant__heading">
+          <div class="title title--light">Какие гарантии Вы имеете сотрудничая с нами?</div>
+        </div>
+        <div class="guarant__main">
+          <ul class="guarant__items-list">
+            <li class="guarant__item" data-guarant="prof">
+              <div class="guarant__item-title">Профессионализм</div>
+              <div class="guarant__item-value">Команда PRO-SITE – практики и предлагаем рынку только те услуги, в которых сами получили высокие результаты.</div>
+            </li>
+            <li class="guarant__item" data-guarant="experience">
+              <div class="guarant__item-title">Свыше 7 лет на рынке</div>
+              <div class="guarant__item-value">Более 7 лет мы приносим огромную пользу своим заказчикам.</div>
+            </li>
+            <li class="guarant__item" data-guarant="portfolio">
+              <div class="guarant__item-title">Портфолио, кейсы, отзывы</div>
+              <div class="guarant__item-value">Сами за нас говорят, что нам можно доверять и с нами сотрудничать. Посмотрите и убедитесь.</div>
+            </li>
+            <li class="guarant__item" data-guarant="recommend">
+              <div class="guarant__item-title">Нас рекомендуют знакомым и друзьям</div>
+              <div class="guarant__item-value">Достаточно много клиентов обращается к нам по рекомендации друзей, коллег и знакомых.</div>
+            </li>
+            <li class="guarant__item" data-guarant="contract">
+              <div class="guarant__item-title">Работа по договору</div>
+              <div class="guarant__item-value">Если необходима юридическая безопасность, мы заключаем с Вами договор.</div>
+            </li>
+            <li class="guarant__item" data-guarant="guarantee">
+              <div class="guarant__item-title">Гарантии исполнения заказов</div>
+              <div class="guarant__item-value">Если Ваш заказ не будет выполнен, мы вернем денежные средства в полном объеме.</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section faq">
+      <div class="wrapper">
+        <div class="faq__heading">
+          <div class="title title--dark">Ответы на популярные вопросы</div>
+        </div>
+        <div class="faq__main">
+          <ul class="faq__part">
+            <li class="faq__item">
+              <div class="faq__item-heading js-dropdown-click-handler" data-dropdown-parent=".faq__item"><span class="faq__item-title">Админ панель для управления сайтом?</span></div>
+              <div class="faq__item-main">
+                <div class="faq__item-value">Админ панель для управления сайтом?</div>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__item-heading js-dropdown-click-handler" data-dropdown-parent=".faq__item"><span class="faq__item-title">Какие сроки разработки сайта?</span></div>
+              <div class="faq__item-main">
+                <div class="faq__item-value">Время и срок разработки сайта будет указан в договоре. Минимальный срок разработки сайта 10 рабочих дней. В случае, если все-таки произойдет задержка при сдаче проекта, то наша компания несет штрафные санкции с финансовой ответственностью за каждый день просрочки сдачи сайта.</div>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__item-heading js-dropdown-click-handler" data-dropdown-parent=".faq__item"><span class="faq__item-title">Техническое задание необходимо?</span></div>
+              <div class="faq__item-main">
+                <div class="faq__item-value">Техническое задание необходимо?</div>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__item-heading js-dropdown-click-handler" data-dropdown-parent=".faq__item"><span class="faq__item-title">Что такое бриф и зачем он нужен?</span></div>
+              <div class="faq__item-main">
+                <div class="faq__item-value">Что такое бриф и зачем он нужен?</div>
+              </div>
+            </li>
+          </ul>
+          <ul class="faq__part">
+            <li class="faq__item">
+              <div class="faq__item-heading js-dropdown-click-handler" data-dropdown-parent=".faq__item"><span class="faq__item-title">Безналичный расчет через банковский счет?</span></div>
+              <div class="faq__item-main">
+                <div class="faq__item-value">Безналичный расчет через банковский счет?</div>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__item-heading js-dropdown-click-handler" data-dropdown-parent=".faq__item"><span class="faq__item-title">Какая CMS будет использоваться при разработке?</span></div>
+              <div class="faq__item-main">
+                <div class="faq__item-value">Какая CMS будет использоваться при разработке?</div>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__item-heading js-dropdown-click-handler" data-dropdown-parent=".faq__item"><span class="faq__item-title">Дизайн будет нарисован с нуля?</span></div>
+              <div class="faq__item-main">
+                <div class="faq__item-value">Дизайн будет нарисован с нуля?</div>
+              </div>
+            </li>
+            <li class="faq__item">
+              <div class="faq__item-heading js-dropdown-click-handler" data-dropdown-parent=".faq__item"><span class="faq__item-title">Поддержка сайта и дальнейшая раскрутка?</span></div>
+              <div class="faq__item-main">
+                <div class="faq__item-value">Поддержка сайта и дальнейшая раскрутка?</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section connect">
+      <div class="wrapper">
+        <div class="connect__heading">
+          <h3 class="title title--light">Свяжитесь с нами</h3>
+          <div class="connect__title-descr">Ответ на Вашу заявку придёт в течении часа</div>
+        </div>
+        <div class="connect__main">
+          <form class="connect__form" action="#">
+            <div class="connect__form-inner">
+              <div class="connect__part">
+                <div class="connect__input-wrap" data-connect="name">
+                  <input class="connect__text-form-element connect__input" type="text" placeholder="Введите ваше имя:" name="name"/>
+                </div>
+                <div class="connect__input-wrap" data-connect="email">
+                  <input class="connect__text-form-element connect__input" type="text" placeholder="Введите ваш e-mail:*" name="email"/>
+                </div>
+                <div class="connect__input-wrap connect__file-wrap">
+                  <input class="connect__file-input" type="file" name="file"/>
+                  <div class="connect__file-descr">Форматы: DOC, DOCX, XLS, XLSX, TXT, PDF</div>
+                </div>
+              </div>
+              <div class="connect__part">
+                <div class="connect__input-wrap" data-connect="message">
+                  <textarea class="connect__text-form-element connect__textarea" placeholder="Текст сообщения" name="message"></textarea>
+                </div>
+              </div>
+              <div class="connect__submit-wrap">
+                <input class="connect__submit button--md" type="submit" name="submit" value="Отправить заявку"/>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="section footer">
+      <div class="wrapper">
+        <div class="footer__main">
+          <div class="footer__item">
+            <div class="footer__item-title">Создание сайтов</div>
+            <div class="footer__item-main">
+              <ul class="footer__item-part">
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Landing page</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Сайт-Визитка</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Интернет-магазин</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Сайт-Каталог</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Корпоративный (Бизнес) сайт</a></li>
+              </ul>
+              <ul class="footer__item-part">
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Официальный сайт</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Информационный портал</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Новостной Сайт</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Форум</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">Продвижение сайтов </div>
+            <div class="footer__item-main">
+              <ul class="footer__item-part">
+                <li class="footer__item-li"><a class="footer__item-link" href="#">SEO-продвижение</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Контекстная Реклама</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Баннерная реклама</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">Компания</div>
+            <div class="footer__item-main">
+              <ul class="footer__item-part">
+                <li class="footer__item-li"><a class="footer__item-link" href="#">О компании</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Портфолио</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Отзывы</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item">
+            <div class="footer__item-title">Контакты</div>
+            <div class="footer__item-main">
+              <ul class="footer__item-part">
+                <li class="footer__item-li"><a class="footer__item-link" href="#">Обратная связь</a></li>
+                <li class="footer__item-li"><a class="footer__item-link" href="#">info@pro-site.ru</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__sign-wrap">
+          <div class="footer__sign">© 2011-2018 Digital Agency PRO-SITE. Все права защищены. Любое использование материалов сайта возможно лишь с разрешения правообладателя.</div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/siema.min.js"></script>
   </body>
 </html>

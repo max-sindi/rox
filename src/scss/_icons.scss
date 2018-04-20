@@ -17,7 +17,7 @@
 .portfolio__control {
   &--right {
     .portfolio__control-icon {
-      left: 35px;
+      left: 100px;
       background: url('../img/icons/right-control.png') no-repeat;
 
       @media (min-width: $md-point) {
@@ -29,7 +29,7 @@
 
   &--left {
     .portfolio__control-icon {
-      right: 35px;
+      right: 100px;
       background: url('../img/icons/left-control.png') no-repeat;
 
       @media (min-width: $md-point) {
@@ -171,7 +171,29 @@
   }
 }
 
+.examples {
+  &__control {
+    &::before {
+      width: 25px;
+      height: 45px;
+    }
+
+    &--left {
+      &::before {
+        background-image: url('../img/icons/examples-control-left.png');
+      }
+    }
+
+    &--right {
+      &::before {
+        background-image: url('../img/icons/examples-control-right.png');
+      }
+    }
+  }
+}
+
 .people {
+
   &__item {
     &[data-people="market"] {
       &::before {
@@ -225,8 +247,8 @@
 }
 
 .how {
-  &__item {
 
+  &__item {
     &[data-how="breef"] {
       &::before {
         width: 57px;
@@ -306,5 +328,118 @@
         background-image: url('../img/icons/how-finish.png');
       }
     }
+
+    &:nth-of-type(9n+9) {
+      .how__item-count-wrap {
+        &::after {
+          background-image: url('../img/icons/flag.png');
+        }
+      }
+    }
   }
+}
+
+.guarant {
+
+  &__item {
+    &[data-guarant="prof"] {
+      &::before {
+        width: 38px;
+        height: 46px;
+        background-image: url('../img/icons/guarant-prof.png');
+      }
+    }
+
+    &[data-guarant="experience"] {
+      &::before {
+        width: 46px;
+        height: 48px;
+        background-image: url('../img/icons/guarant-experience.png');
+      }
+    }
+
+    &[data-guarant="portfolio"] {
+      &::before {
+        width: 50px;
+        height: 48px;
+        background-image: url('../img/icons/guarant-portfolio.png');
+      }
+    }
+
+    &[data-guarant="recommend"] {
+      &::before {
+        width: 55px;
+        height: 48px;
+        background-image: url('../img/icons/guarant-recommend.png');
+      }
+    }
+
+    &[data-guarant="contract"] {
+      &::before {
+        width: 38px;
+        height: 47px;
+        background-image: url('../img/icons/guarant-contract.png');
+      }
+    }
+
+    &[data-guarant="guarantee"] {
+      &::before {
+        width: 41px;
+        height: 46px;
+        background-image: url('../img/icons/guarant-guarantee.png');
+      }
+    }
+  }
+}
+
+.faq__item {
+
+  &-heading {
+    &::after {
+      background-image: url('../img/icons/arrow-down-sm.png');
+    }
+  }
+
+  &.opened {
+    .faq__item-heading {
+      &::after {
+        background-image: url('../img/icons/arrow-up-sm.png');
+      }
+    }
+  }
+}
+
+.connect {
+  &__input-wrap {
+
+    &[data-connect="name"] {
+      &::after {
+        width: 17px;
+        height: 23px;
+        background-image: url('../img/icons/connect-name.png');
+      }
+    }
+
+    &[data-connect="email"] {
+      &::after {
+        width: 22px;
+        height: 25px;
+        background-image: url('../img/icons/connect-email.png');
+      }
+    }
+
+    &[data-connect="message"] {
+      &::after {
+        width: 23px;
+        height: 22px;
+        background-image: url('../img/icons/connect-mesage.png');
+      }
+    }
+  }
+}
+
+.rate__table-cell--true::before {
+  width: 22px;
+  height: 16px;
+  background-image: url('../img/icons/rate-has.png');
 }

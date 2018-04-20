@@ -1,21 +1,33 @@
-// need finish corner.
+// cut out corner from psd
+body {
+  padding-top: 60px;
+}
 
 .header {
-  //delete rule!!
-  display: none;
-  &__wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+
+  &__inner {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &__logo {
     &-wrap {
       width: 175px;
       height: 21px;
-      margin-right: 30px;
+      margin-right: 40px;
+
+      @media (min-width: $sm-point) {
+        margin-right: 30px;
+      }
     }
 
     &-link {
@@ -29,8 +41,12 @@
     &-wrap {
       width: 35px;
       height: 35px;
-      margin-right: 24px;
+      margin-right: 10px;
       box-sizing: border-box;
+
+      @media (min-width: $sm-point) {
+        margin-right: 24px;
+      }
     }
 
     &-link {
@@ -41,20 +57,73 @@
     }
   }
 
-  &__nav {
+  &__order {
     &-wrap {
-      // flex-grow: 1;
-      margin-right: 20px;
+      display: none;
+      width: 205px;
+      text-align: center;
+
+      @media (min-width: $xl-point) {
+        display: block;
+      }
+    }
+
+    &-link {
+      display: block;
+      width: 205px;
+      padding: 9px;
+      box-sizing: border-box;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+      border-radius: 5px;
+      background-color: $green-gray;
+    }
+  }
+
+  &__nav {
+    background-color: #fff;
+
+    &-wrap {
+      // position: absolute;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      // padding: 15px;
+      box-sizing: border-box;
+      background-color: #fff;
+
+      @media (min-width: $lg-point) {
+        position: static;
+        width: auto;
+        margin-left: auto;
+      }
+
+      @media (min-width: $xl-point) {
+        margin-right: 20px;
+      }
     }
 
     &-list {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @media (min-width: $lg-point) {
+      }
     }
 
     &-item {
       position: relative;
-      margin-right: 47px;
+      margin: 15px 30px 0px 0;
+
+      @media (min-width: $lg-point) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $xl-point) {
+        margin-right: 47px;
+      }
 
       &.has-dropdown {
         margin-right: 26px;
@@ -87,6 +156,7 @@
 
     &-drop-wrap {
       position: absolute;
+      z-index: 5;
       top: 19px;
       left: 0;
       padding-top: 15px;
@@ -121,22 +191,30 @@
     }
   }
 
-  &__order {
-    &-wrap {
-      width: 205px;
-      text-align: center;
-    }
+  &__menu-wrap {
+    // display: none;
+    margin-left: auto;
 
-    &-link {
-      display: block;
-      width: 205px;
-      padding: 9px;
-      box-sizing: border-box;
-      font-size: 20px;
-      font-weight: 500;
-      color: #fff;
-      border-radius: 5px;
-      background-color: $green-gray;
+    @media (min-width: $lg-point) {
+      display: none;
+    }
+  }
+}
+
+.menu-button {
+  width: 40px;
+  height: 40px;
+  background-color: #639b47;
+  border-radius: 5px;
+
+  &__stick {
+    width: 26px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: #fff;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

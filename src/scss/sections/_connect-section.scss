@@ -1,0 +1,108 @@
+.connect {
+  &__heading {
+    margin-bottom: 22px;
+  }
+
+  &__title-descr {
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__form-inner {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $lg-point) {
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__part {
+    width: 100%;
+
+    @media (min-width: $lg-point) {
+      max-width: calc(50% - 10px);
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 26px;
+      right: 24px;
+      transform: translate(50%, -50%);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__text-form-element {
+    width: 100%;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight: 300;
+    color: #999;
+    background-color: #fff;
+    border: 0;
+
+    &::placeholder {
+      color: #999;
+    }
+  }
+
+  &__textarea {
+    min-height: 190px;
+  }
+
+  &__file-wrap {
+    position: relative;
+    min-height: 55px;
+    overflow-x: hidden;
+  }
+
+  &__file-input {
+    position: absolute;
+    left: -500px;
+
+    &::before {
+      content: "Прикрепить файл";
+      position: absolute;
+      width: 205px;
+      box-sizing: border-box;
+      padding: 14px;
+      left: 500px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 300;
+      text-align: center;
+      border: 1px solid #fff;
+    }
+  }
+
+  &__file-descr {
+    padding-top: 16px;
+    padding-left: 225px;
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  &__submit-wrap {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  &__submit {
+    border: none;
+  }
+
+}

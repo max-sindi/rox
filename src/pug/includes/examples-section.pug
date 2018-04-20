@@ -1,9 +1,12 @@
-.section.examples
+section.section.examples.bot-line
   .wrapper
     .examples__heading
       .exaples__title.title.title--dark Примеры форумов
     .examples__main
-      ul.examples__list
+      ul.examples__list.carousel#examples__carousel
         each item in ( new Array(6) )
           li.examples__item
             img.examples__item-img(src='img/example-fake.png')
+      .examples__controls-wrap#examples__controls-wrap(hidden)
+        span.examples__control.examples__control--left#examples-left
+        span.examples__control.examples__control--right#examples-right

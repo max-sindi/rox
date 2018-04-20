@@ -1,10 +1,110 @@
+-
+ var table = [
+  [
+    'В тариф входит:',
+    'Старт',
+    'Бизнес',
+    'VIP',
+  ],
+  [
+    'Адаптивная верстка',
+    '+',
+    '+',
+    '+',
+  ],
+  [
+    'Адаптивное меню',
+    '+',
+    '+',
+    '+',
+  ],
+  [
+    'Кнопка переключения',
+    '-',
+    '+',
+    '+',
+  ],
+  [
+    'Правка текущей верстки',
+    '-',
+    '+',
+    '+',
+  ],
+  [
+    'Корректировка шаблона',
+    '-',
+    '-',
+    '+',
+  ],
+  [
+    'Интернет-магазин',
+    '-',
+    '-',
+    '+',
+  ],
+  [
+    'Срок выполнения',
+    '2 дня',
+    '2 дня',
+    '2 дня',
+  ],
+  [
+    'Стоимость',
+    {
+      old: '1 090руб.',
+      new: '500',
+      unit: ' руб.',
+      href: '#',
+    },
+    {
+      old: '2 990 руб.',
+      new: '1 500',
+      unit: ' руб.',
+      href: '#',
+    },
+    {
+      old: '5 000 руб.',
+      new: '3 000',
+      unit: ' руб.',
+      href: '#',
+    },
+  ],
+ ];
 
+section.section.rate
+  .wrapper
+    .rate__heading
+      .title.title--dark Выберите вариант пакета услуг
+    .rate__table-wrap
+      table.rate__table
+        each row, index in table
 
-//- .section.rate
-//-   .wrapper
-//-     .rate__heading
-//-       .title.title--dark Выберите вариант пакета услуг
-//-     .rate__main
-//-       .rate__main-heading
+          if index === 0
+            tr.rate__table-row
+              each cell in row
+                td.rate__table-cell
+                  .rate__table-title=cell
 
-//-       .rate__main-content
+          else if index === table.length - 1
+            tr.rate__table-row
+              each cell, cellIndex in row
+                if cellIndex === 0
+                  td.rate__table-cell=cell
+                else 
+                  td.rate__table-cell
+                    s.rate__table-cell--old=cell.old
+                    span.rate__table-cell--new=cell.new
+                    span.rate__table-cell-price-unit=cell.unit
+                    a.rate__table-order.button--sm(href=cell.href) Заказать
+
+          else
+            tr.rate__table-row
+              each cell in row
+                if cell === '+'
+                  td.rate__table-cell.rate__table-cell--true=cell
+                else if cell === '-'
+                  td.rate__table-cell.rate__table-cell--false=cell
+                else
+                  td.rate__table-cell=cell
+    .rate__also-wrap
+      .rate__also В зависимости от Ваших требований цены могут быть изменены в меньшую или большую сторону

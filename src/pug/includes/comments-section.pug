@@ -1,24 +1,42 @@
-.section.comments
+-
+ var items = [
+  {
+    avatarImg: 'img/comments-avatar.png',
+    text: 'За время сотрудничества со студией создания сайтов PRO-Site команда разработчиков показала свою способность с полной ответственностью подходить к поставленным задачам, выполнять задачи качественно и в срок. Отличительной чертой работы является высокий профессионализм, коммуникабельность и заинтересованность в выполняемой работе. Рекомендуем студию как надежного и стабильного партнёра.',
+    name: 'Андрей Добровольский,',
+    position: 'Основатель cети гриль баров "ШашлыкоFF"',
+  },
+  {
+    avatarImg: 'img/comments-avatar.png',
+    text: 'За время сотрудничества со студией создания сайтов PRO-Site команда разработчиков показала свою способность с полной ответственностью подходить к поставленным задачам, выполнять задачи качественно и в срок. Отличительной чертой работы является высокий профессионализм, коммуникабельность и заинтересованность в выполняемой работе. Рекомендуем студию как надежного и стабильного партнёра.',
+    name: 'Андрей Добровольский,',
+    position: 'Основатель cети гриль баров "ШашлыкоFF"',
+  },
+ ];
+
+section.section.comments
   .wrapper.comments__wrapper
     .comments__heading
       .comments__title.title.title--dark Отзывы
     .comments__main
-      .comments__content-wrap
-        .comments__content
-          .comments__avatar-wrap
-            .comments__avatar-box
-              img.comments__avatar-img(src='img/comments-avatar.png')
-          .comments__texts-wrap
-            p.text За время сотрудничества со студией создания сайтов PRO-Site команда разработчиков показала свою способность с полной ответственностью подходить к поставленным задачам, выполнять задачи качественно и в срок. Отличительной чертой работы является высокий профессионализм, коммуникабельность и заинтересованность в выполняемой работе. Рекомендуем студию как надежного и стабильного партнёра.
-            .comments__who
-              .comments__who-name Андрей Добровольский,
-              .comments__who-position Основатель cети гриль баров "ШашлыкоFF"
-        .comments__order-wrap
-          a.comments__order-link(href='#') Смотреть все отзывы
+      each item in items
+        .comment__item
+          .comments__content-wrap
+            .comments__content
+              .comments__avatar-wrap
+                .comments__avatar-box
+                  img.comments__avatar-img(src=item.avatarImg)
+              .comments__texts-wrap
+                p.text=item.text
+                .comments__who
+                  .comments__who-name=item.name
+                  .comments__who-position=item.position
+            .comments__order-wrap
+              a.comments__order-link(href='#') Смотреть все отзывы
 
-      .comments__picture-wrap
-        .comments__img-wrap
-          img.comments__img(src='img/comment-picture.png')
-        .comments__order-wrap
-          a.comments__order-link(href='#') Смотреть все кейсы
+          .comments__picture-wrap
+            .comments__img-wrap
+              img.comments__img(src='img/comment-picture.png')
+            .comments__order-wrap
+              a.comments__order-link(href='#') Смотреть все кейсы
 

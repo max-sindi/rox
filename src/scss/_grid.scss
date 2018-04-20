@@ -5,10 +5,12 @@
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 $wrapper-gutter;
+  padding: 0 10px;
 
   @media (min-width: $sm-point) {
     max-width: $sm-width;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @media (min-width: $md-point) {

@@ -12,9 +12,7 @@ const pug = require('gulp-pug');
 gulp.task('pug', () => {
   return gulp.src('src/pug/**/*.pug')
     .pipe( plumber() )
-    .pipe( pug( { 
-                  pretty: true,
-                }))
+    .pipe( pug( { pretty: true }))
     .pipe(gulp.dest('dist'));
 })
 
@@ -22,7 +20,7 @@ gulp.task('sass', () => {
   return gulp.src('./src/scss/**/*.scss')
     .pipe( sourcemaps.init() )
     .pipe( plumber() )
-    .pipe( sass() )
+    .pipe( sass() ).on('error', function(){console.log(error.message)})
     .pipe( sourcemaps.write() )
     .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());

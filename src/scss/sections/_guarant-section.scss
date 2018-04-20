@@ -1,0 +1,45 @@
+.guarant {
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__items-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    max-width: 333px;
+    margin-bottom: 42px;
+    padding-top: 72px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 36px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    &-value {
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+section.section.connect
+  .wrapper
+    .connect__heading
+      h3.title.title--light Свяжитесь с нами
+      .connect__title-descr Ответ на Вашу заявку придёт в течении часа
+    .connect__main
+      form.connect__form(action='#')
+        .connect__form-inner
+          .connect__part
+            .connect__input-wrap(data-connect='name')
+              input.connect__text-form-element.connect__input(type='text' placeholder='Введите ваше имя:' name='name')
+            .connect__input-wrap(data-connect='email')
+              input.connect__text-form-element.connect__input(type='text' placeholder='Введите ваш e-mail:*' name='email')
+            .connect__input-wrap.connect__file-wrap
+              input.connect__file-input(type='file' name='file')
+              .connect__file-descr Форматы: DOC, DOCX, XLS, XLSX, TXT, PDF
+          .connect__part
+            .connect__input-wrap(data-connect='message')
+              textarea.connect__text-form-element.connect__textarea(placeholder='Текст сообщения' name='message')
+          .connect__submit-wrap
+            input.connect__submit.button--md(type='submit' name="submit" value="Отправить заявку")

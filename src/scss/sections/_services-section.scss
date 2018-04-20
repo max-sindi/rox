@@ -1,27 +1,34 @@
 .services {
-  padding-top: 60px;
-  padding-bottom: 42px;
-
-  &__heading {
-    margin-bottom: 60px;
-  }
+  padding-bottom: 40px;
 
   &__item {
     margin-bottom: 20px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &-heading {
       position: relative;
       background-color: $green-gray;
-      padding: 16px 90px 18px;
+      padding: 18px 67px;
       cursor: pointer;
+
+      @media (min-width: $md-point) {
+        padding: 13px 90px;
+      }
 
       &::before {
         content: "";
         position: absolute;
         top: 50%;
-        left: 45px;
+        left: 33px;
         transform: translate(-50%, -50%);
         background-repeat: no-repeat;
+
+        @media (min-width: $md-point) {
+          left: 53px;
+        }
       }
 
       &::after {
@@ -37,14 +44,22 @@
     }
 
     &-title {
-      font-size: 30px;
+      font-size: 20px;
       font-weight: 500;
       color: #fff;
+
+      @media (min-width: $md-point) {
+        font-size: 30px;
+      }
     }
 
     &-main {
-      padding-left: 40px;
+      padding-left: 22px;
       padding-bottom: 5px;
+
+      @media (min-width: $md-point) {
+        padding-left: 40px;
+      }
     }
   }
 
@@ -61,7 +76,7 @@
       &::before {
         content: "";
         position: absolute;
-        left: -23px;
+        left: -21px;
         top: 8px;
         width: 7px;
         height: 7px;
@@ -77,10 +92,15 @@
   }
 
   &__also {
-    padding-top: 5px;
+    display: none;
+    margin-top: 25px;
     font-size: 30px;
     font-weight: 300;
     color: #4d4d4d;
     text-align: center;
+
+    @media (min-width: $sm-point) {
+      display: block;
+    }
   }
 }

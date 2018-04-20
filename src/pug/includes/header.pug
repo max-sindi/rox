@@ -63,32 +63,39 @@
   };
 
 header.header
-  .wrapper.header__wrapper
-    .header__logo-wrap
-      a.header__logo-link(href=logoLink)
-        img.header__logo-img(src=logoSrc alt=logoAlt)
+  .wrapper
+    .header__inner
+      .header__logo-wrap
+        a.header__logo-link(href=logoLink)
+          img.header__logo-img(src=logoSrc alt=logoAlt)
 
-    .header__sandbox-wrap
-      a.header__sandbox-link(href=sandboxLink)
+      .header__sandbox-wrap
+        a.header__sandbox-link(href=sandboxLink)
 
-    .header__nav-wrap
-      nav.header__nav
-        ul.header__nav-list
+      .header__menu-wrap#header__menu-button-wrap
+        .menu-button.flex-center
+          span.menu-button__stick
+          span.menu-button__stick
+          span.menu-button__stick
 
-          each val in navItems
-            if val.dropdownList
-              li.header__nav-item.has-dropdown
-                a.header__nav-link.header__nav-link--drop(href=val.href)=val.value
-                  //- span.header__nav-link-carret
+      .header__nav-wrap#header__nav-wrap
+        nav.header__nav
+          ul.header__nav-list
 
-                .header__nav-drop-wrap
-                  ul.header__nav-drop-list
-                    each dropItem in val.dropdownList
-                      li.header__nav-drop-item
-                        a.header__nav-drop-link(href=dropItem.href)=dropItem.value
-            else 
-              li.header__nav-item
-                a.header__nav-link(href=val.href)=val.value
+            each val in navItems
+              if val.dropdownList
+                li.header__nav-item.has-dropdown
+                  a.header__nav-link.header__nav-link--drop(href=val.href)=val.value
+                    //- span.header__nav-link-carret
 
-    .header__order-wrap
-      a.header__order-link(href=order.href)=order.value
+                  .header__nav-drop-wrap
+                    ul.header__nav-drop-list
+                      each dropItem in val.dropdownList
+                        li.header__nav-drop-item
+                          a.header__nav-drop-link(href=dropItem.href)=dropItem.value
+              else 
+                li.header__nav-item
+                  a.header__nav-link(href=val.href)=val.value
+
+      .header__order-wrap
+        a.header__order-link(href=order.href)=order.value

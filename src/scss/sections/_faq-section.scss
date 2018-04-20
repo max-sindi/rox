@@ -1,0 +1,60 @@
+.faq {
+  padding-top: 50px;
+
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $lg-point) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__part {
+    width: 100%;
+
+    @media (min-width: $lg-point) {
+      max-width: calc(50% - 10px);
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    &-heading {
+      position: relative;
+      padding: 10px;
+      padding-top: 7px;
+      background-color: $green-gray;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 22px;
+        height: 11px;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    &-value {
+      padding-top: 13px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
